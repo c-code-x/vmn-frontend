@@ -32,6 +32,10 @@ const LandingPage = () => {
                     <stop offset="0%" stop-color="#4B0082" />
                     <stop offset="100%" stop-color="#4338CA" />
                   </linearGradient>
+                  <linearGradient id="c">
+  <stop offset="0%" stop-color="#FF512F" />
+  <stop offset="100%" stop-color="#F09819" />
+</linearGradient>
                   <clipPath id="a">
                     <path
                       fill="currentColor"
@@ -40,27 +44,26 @@ const LandingPage = () => {
                   </clipPath>
                 </defs>
                 <g clip-path="url(#a)">
-                  <path fill="url(#b)">
+                  <path fill="url(#c)">
                     <animate
                       attributeName="d"
                       dur="10000ms"
                       repeatCount="indefinite"
-                      values="M833 676.5q-52 176.5-231.5 170T237 778Q52 716 54.5 501.5t188-266q185.5-51.5 374-85t228.5 158q40 191.5-12 368Z;
-                       M791.5 663Q760 826 587 851.5T298 765Q182 653 142.5 481T247 165.5Q391 22 589.5 80.5t216 239Q823 500 791.5 663Z;
-                       M854 657.5Q751 815 587.5 823T285 751q-139-80-99-231.5T320.5 247Q415 126 604 129.5t271 187q82 183.5-21 341Z;
-                       M833 676.5q-52 176.5-231.5 170T237 778Q52 716 54.5 501.5t188-266q185.5-51.5 374-85t228.5 158q40 191.5-12 368Z;"></animate>
+                      values="M833 676.5q-52 176.5-231.5 170T237 778Q52 716 54.5 501.5t188-266q185.5-51.5 374-85t228.5 158q40 191.5-12 368Z;M791.5 663Q760 826 587 851.5T298 765Q182 653 142.5 481T247 165.5Q391 22 589.5 80.5t216 239Q823 500 791.5 663Z;
+                      M854 657.5Q751 815 587.5 823T285 751q-139-80-99-231.5T320.5 247Q415 126 604 129.5t271 187q82 183.5-21 341Z;
+                      M833 676.5q-52 176.5-231.5 170T237 778Q52 716 54.5 501.5t188-266q185.5-51.5 374-85t228.5 158q40 191.5-12 368Z;"></animate>
                   </path>
                 </g>
               </svg>
               <div
                 className="absolute w-[150px] tablet:w-[120px] phone:w-[85px] h-[50px] mt-[-50px]
-                 tablet:mt-[-18px] phone:mt-0">
+                tablet:mt-[-18px] phone:mt-0">
                 <Image src={logo} alt="vmn" />
               </div>
             </div>
           </div>
-          <div className="flex w-[400px] tablet:w-[300px] phone:w-[200px] laptop:mt-[-65px]">
-            <p className="desktop:text-[25px] laptop:text-[20px] tablet:text-[20px] phone:text-sm font-serif font-medium text-gray-600/50">
+          <div className="flex w-[400px] tablet:w-[400px] phone:w-[300px] laptop:mt-[-65px] ">
+            <p className="desktop:text-[25px] si:text-[25px] laptop:text-[20px] tablet:text-[20px] phone:text-[20px] font-serif font-medium text-black-600/50">
               Venture Mentor Network connects aspiring entrepreneurs With
               experienced mentors, fostering growth and success. Empowering
               entrepreneurs to reach new heights.{" "}
@@ -71,18 +74,18 @@ const LandingPage = () => {
           <Image
             src={man}
             alt="blob"
-            className="w-auto h-[400px] sp:h-[300px]"
+            className="w-auto h-[300px] si:h-[450px] sp:h-[220px] se:h-[250px] sp:w-[450px]"
           />
-          <div className="flex md:justify-between justify-center space-x-2 flex-row">
+          <div className="flex md:justify-between justify-center space-x-2 flex-row si:h-[50px]">
             <button
-              className="flex bg-[#FB8122] py-3 px-5 text-white font-medium rounded-lg desktop:text-[24px] laptop:text-[19px] text-[16px]"
+              className="flex bg-[#FB8122] py-3 px-5 text-white font-medium rounded-lg desktop:text-[24px] si:text-[25px] laptop:text-[19px] text-[16px]"
               onClick={() => {
                 navigate.push("/mentors");
               }}>
               Find a mentor
             </button>
             <button
-              className="flex border-2 border-[#FB8122] bg-transparent text-[#FB8122] py-3 px-5 rounded-lg desktop:text-[24px] laptop:text-[19px] text-[16px]"
+              className="flex border-2 border-[#FB8122] bg-transparent si:text-[25px] text-[#FB8122] py-3 px-5 rounded-lg desktop:text-[24px] laptop:text-[19px] text-[16px]"
               onClick={() => {
                 navigate.push("/signup");
               }}>
