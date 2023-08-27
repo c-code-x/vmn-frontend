@@ -64,9 +64,7 @@ const LandingPage = () => {
           </div>
           <div className="flex w-[400px] tablet:w-[400px] phone:w-[300px] laptop:mt-[-65px] ">
             <p className="desktop:text-[25px] si:text-[25px] laptop:text-[20px] tablet:text-[20px] phone:text-[20px] font-serif font-medium text-black-600/50">
-              Venture Mentor Network connects aspiring entrepreneurs With
-              experienced mentors, fostering growth and success. Empowering
-              entrepreneurs to reach new heights.{" "}
+            A dedicated platform to provide these entrepreneurs access to an accomplished network of mentors, professionals, entrepreneurs, innovators, and subject matter experts with experience & skills across a variety of industries and functional areas with unceasing enthusiasm to support and give back to the community and its next generation of ardent entrepreneurs.{" "}
             </p>
           </div>
         </div>

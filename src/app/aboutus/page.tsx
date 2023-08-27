@@ -24,7 +24,7 @@ const AboutUs = () =>{
               </div>
               <div className=" flex  justify-center mt-[45px] sp:mt-[40px]">
                 <div className="bg-[#3A256D] p-4 w-[600px] h-[200px] sp:w-[300px] sp:h-[340px] se:w-[330px] se:h-[320px] si:h-[320px] sr:h-[320px]  sn:w-[210px] sn:h-[450px] rounded-lg">
-                  <p className="text-white si:text-xl sr:text-2xl sn:text-[15px]">Venture Development Center (VDC) is a venture pre-incubator and the epicenter for all the startup action at GITAM. The centre is an abode for various entrepreneurship activities on campus with a dedicated team of venture coaches, trained & certified by Northeastern University, Boston, and a wholly student-run E-Club. </p>
+                  <p className="text-white si:text-xl sr:text-2xl sn:text-[15px]">Venture Mentor Network pairs GITAM’s student, staff, faculty, and alum ventures with experienced entrepreneurial mentors. Mentors come from varied industries and work with ventures to address specific business challenges and mentoring needs that will help move the venture(s) forward. VMN mentors have the expertise and are willing to share their insights via mentoring in everything from research and development to scaling a business to reviewing pitch decks. </p>
                   <Image width={600} height={200} className='object-contain w-[600px] h-[200px] rounded-lg ' src='https://color-hex.org/colors/e1e2e2.png' alt='VDC-VMN' />
                 </div>
               </div>
