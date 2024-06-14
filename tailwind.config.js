@@ -33,10 +33,10 @@ module.exports = {
         },
         si: {
           min: "700px",
-          max: "830px",
+          max: "800px",
         },
         sr: {
-          min: "840px",
+          min: "801px",
           max: "930px",
         },
         exMd: {

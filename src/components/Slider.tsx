@@ -18,31 +18,31 @@ const responsive = {
   mobile: {
     breakpoint: { max: 767, min: 0 },
     items: 1,
-    slidesToSlide: 1, // optional, default to 1.
+    slidesToSlide: 1, 
   },
 };
 
 const sliderImageUrl = [
-  //First image url
+  
   {
-    url: "https://vdc.gitam.edu/main_ui/images/home_imgs/Picture-3.jpg?crop=0.9760858955588091xw:1xh;center,top&resize=480:*",
+    url: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTogLh7ulb913nPEWeMtLdv2P2IS-IB9Ya6ojxQDweqe0scmPsofBdp7WMR2a-RcbOUK_w&usqp=CAU?crop=0.9760858955588091xw:1xh;center,top&resize=480:*",
   },
   {
     url: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTogLh7ulb913nPEWeMtLdv2P2IS-IB9Ya6ojxQDweqe0scmPsofBdp7WMR2a-RcbOUK_w&usqp=CAU?crop=0.9760858955588091xw:1xh;center,top&resize=480:*",
   },
-  //Second image url
+  
   {
     url: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSO2CW9W_xT9f_ylznozWUBZZQoWbkypFhj41Lkb-GAhF06zrDM1Iu2zLG921-aqvMEFMk&usqp=CAU",
   },
-  //Third image url
+  
   {
-    url: "https://vdc.gitam.edu/main_ui/images/about_imgs/innovate/TeamTyrants.jpg",
+    url: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTogLh7ulb913nPEWeMtLdv2P2IS-IB9Ya6ojxQDweqe0scmPsofBdp7WMR2a-RcbOUK_w&usqp=CAU?crop=0.9760858955588091xw:1xh;center,top&resize=480:*",
   },
 
-  //Fourth image url
+  
 
   {
-    url: "https://vdc.gitam.edu/main_ui/images/about_imgs/innovate/TeamHydrogravitricity3.jpg",
+    url: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTogLh7ulb913nPEWeMtLdv2P2IS-IB9Ya6ojxQDweqe0scmPsofBdp7WMR2a-RcbOUK_w&usqp=CAU?crop=0.9760858955588091xw:1xh;center,top&resize=480:*",
   },
 ];
 
@@ -67,7 +67,7 @@ const Slider = () => {
                   height={250}
                   className="w-[500px] h-[250px] rounded-10"
                   src={imageUrl.url}
-                  alt="hackathon"
+                  alt={"hackathon"+index}
                 />
               </div>
             </div>
