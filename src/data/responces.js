@@ -1,0 +1,51 @@
+const responceData =[
+    {
+        id:1,
+        name:"Mahesh Varier",
+        email:"vdc@gitam.edu",
+        phno:"1234567890",
+        role:"mentor",
+        msg:"I WISH I COULD BE PART OF THIS VENTURE AS A MENTOR SO DEVELOP MY OWN PROFESSIONAL AND PRESONAL SKILLS AND ASLO THAT HELPS ME TO CULTIVATE LEADERSHIP SKILLS IN ME.",
+    },
+    {
+        id:2,
+        name:"Mahesh Varier",
+        email:"vdc@gitam.edu",
+        phno:"1234567890",
+        role:"mentor",
+        msg:"I WISH I COULD BE PART OF THIS VENTURE AS A MENTOR SO DEVELOP MY OWN PROFESSIONAL AND PRESONAL SKILLS AND ASLO THAT HELPS ME TO CULTIVATE LEADERSHIP SKILLS IN ME.",
+    },
+    {
+        id:3,
+        name:"Mahesh Varier",
+        email:"vdc@gitam.edu",
+        phno:"1234567890",
+        role:"mentor",
+        msg:"I WISH I COULD BE PART OF THIS VENTURE AS A MENTOR SO DEVELOP MY OWN PROFESSIONAL AND PRESONAL SKILLS AND ASLO THAT HELPS ME TO CULTIVATE LEADERSHIP SKILLS IN ME.",
+    },
+    {
+        id:4,
+        name:"Mahesh Varier",
+        email:"vdc@gitam.edu",
+        phno:"1234567890",
+        role:"mentor",
+        msg:"I WISH I COULD BE PART OF THIS VENTURE AS A MENTOR SO DEVELOP MY OWN PROFESSIONAL AND PRESONAL SKILLS AND ASLO THAT HELPS ME TO CULTIVATE LEADERSHIP SKILLS IN ME.",
+    },
+    {
+        id:5,
+        name:"Mahesh Varier",
+        email:"vdc@gitam.edu",
+        phno:"1234567890",
+        role:"mentor",
+        msg:"I WISH I COULD BE PART OF THIS VENTURE AS A MENTOR SO DEVELOP MY OWN PROFESSIONAL AND PRESONAL SKILLS AND ASLO THAT HELPS ME TO CULTIVATE LEADERSHIP SKILLS IN ME.",
+    },
+    {
+        id:6,
+        name:"Mahesh Varier",
+        email:"vdc@gitam.edu",
+        phno:"1234567890",
+        role:"mentor",
+        msg:"I WISH I COULD BE PART OF THIS VENTURE AS A MENTOR SO DEVELOP MY OWN PROFESSIONAL AND PRESONAL SKILLS AND ASLO THAT HELPS ME TO CULTIVATE LEADERSHIP SKILLS IN ME.",
+    },
+]
+export default responceData;

@@ -8,22 +8,19 @@ import Image from "next/image";
 const AboutUs = () =>{
 
     return(
-
-      <div className='flex flex-col font-sans  mt-[100px] sp:mt-22'>
-          <div className=''>
+      <div className='flex flex-col font-sans sp:mt-22 bg-[#EEEEEE]'>
+          <div className='mt-[100px]'>
               <div className='flex flex-col pl-5 sm:pl-0  sn: ml-0 sn:pl-0 sp:pl-0 se:pl-0  '>
                   <h1 className='text-[#262626]  text-2xl sp:text-[25px] se:text-[25px] si:text-[30px] sr:text-[32px] sn:text-[18px] font-bold uppercase  flex justify-center'>
                   We’re here to
                   </h1>
-                  <h1 className='text-[#492DD8]  text-2xl sp:text-[20px] se:text-[25px] si:text-[30px] sr:text-[32px] sn:text-[18px] font-bold uppercase  flex justify-center'>
+                  <h1 className='text-[#981F2B]  text-2xl sp:text-[20px] se:text-[25px] si:text-[30px] sr:text-[32px] sn:text-[18px] font-bold uppercase  flex justify-center'>
                   gurantee your success
                   </h1>
-                  <div className='flex justify-center'>
-                    <div className='w-[200px] md:w-[320px] sp:w-[300px] se:w-[320px] si:w-[440px] sr:w-[470px] sn:w-[240px]  h-[3px] bg-[#FB8122] rounded-md'></div>
-                  </div>
+
               </div>
               <div className=" flex  justify-center mt-[45px] sp:mt-[40px]">
-                <div className="bg-[#3A256D] p-4 w-[600px] h-[200px] sp:w-[300px] sp:h-[340px] se:w-[330px] se:h-[320px] si:h-[320px] sr:h-[320px]  sn:w-[210px] sn:h-[450px] rounded-lg">
+                <div className="bg-[#981F2B] p-4 w-[600px] h-[200px] sp:w-[300px] sp:h-[340px] se:w-[330px] se:h-[320px] si:h-[320px] sr:h-[320px]  sn:w-[210px] sn:h-[450px] rounded-lg">
                   <p className="text-white si:text-xl sr:text-2xl sn:text-[15px]">Venture Mentor Network pairs GITAM’s student, staff, faculty, and alum ventures with experienced entrepreneurial mentors. Mentors come from varied industries and work with ventures to address specific business challenges and mentoring needs that will help move the venture(s) forward. VMN mentors have the expertise and are willing to share their insights via mentoring in everything from research and development to scaling a business to reviewing pitch decks. </p>
                   <Image width={600} height={200} className='object-contain w-[600px] h-[200px] rounded-lg ' src='https://color-hex.org/colors/e1e2e2.png' alt='VDC-VMN' />
                 </div>
@@ -32,7 +29,7 @@ const AboutUs = () =>{
                   <h1 className='text-[#262626]  text-2xl sp:text-[25px] sr:text-[32px] se:text-[25px] si:text-[30px] sn:text-[16px] font-bold uppercase  flex justify-center'>
                   We’re here for you
                   </h1>
-                  <h1 className='text-[#492DD8]  text-2xl sp:text-[20px] se:text-[22px] si:text-[30px] sr:text-[32px] sn:text-[16px] font-bold uppercase  flex justify-center'>
+                  <h1 className='text-[#981F2B]  text-2xl sp:text-[20px] se:text-[22px] si:text-[30px] sr:text-[32px] sn:text-[16px] font-bold uppercase  flex justify-center'>
                   no matter where you are
                   </h1>
                   <div className='flex justify-center'>
@@ -49,7 +46,7 @@ const AboutUs = () =>{
                   <div className="">
                   <h1 className=" text-2xl font-bold">
                     <span className="text-black sp:text-xl se:text-[24px] si:text-[32px]  sr:text-[34px] sn:text-[20px]">Our</span>{"  "}
-                    <span className="text-[#492DD8] sp:text-xl se:text-[24px] si:text-[32px] sr:text-[34px] sn:text-[20px]">Mission</span>
+                    <span className="text-[#981F2B] sp:text-xl se:text-[24px] si:text-[32px] sr:text-[34px] sn:text-[20px]">Mission</span>
                   </h1>
                   <div className='w-[120px] md:w-[50%] h-[3px] bg-[#FB8122] se:w-[140px] rounded-md'></div>
                 </div>
@@ -100,7 +97,7 @@ const AboutUs = () =>{
                   <div className="flex  flex-col ">
                   <h1 className=" text-2xl font-bold">
                     <span className="text-black sp:text-[20px] se:text-[24px] si:text-[32px]  sr:text-[34px] sn:text-[20px]">Our</span>{"  "}
-                    <span className="text-[#492DD8] sp:text-[20px] se:text-[24px] si:text-[32px] sr:text-[34px] sn:text-[20px]">Commitment</span>
+                    <span className="text-[#981F2B] sp:text-[20px] se:text-[24px] si:text-[32px] sr:text-[34px] sn:text-[20px]">Commitment</span>
                   </h1>
                   <div className='w-[120px] md:w-[50%] h-[3px] bg-[#FB8122] se:w-[140px] rounded-md'></div>
                 </div>
@@ -141,45 +138,15 @@ const AboutUs = () =>{
               </div>
               
               <div className='flex flex-col pl-5 sm:pl-0 ml-[50px] sn:ml-[0px] sn:pl-0 sp:pl-0 se:pl-0 sp:mt-5 si:mt-9 sn:mt-5'>
-                  <h1 className='text-[#492DD8]  text-2xl  sp:text-[20px]  sn:text-[18px] font-bold uppercase  flex justify-center'>
+                  <h1 className='text-[#981F2B]  text-2xl  sp:text-[20px]  sn:text-[18px] font-bold uppercase  flex justify-center'>
                   OUR SUCCESS STORIES
                   </h1>
               </div>
               <div className="my-5">
               <Slider/>
               </div>
-              <div className="bg-[#3A256D] p-4 w-full   ">
-              <div className="flex flex-wrap  ">
-                <div className="w-full sm:w-1/3 mt-10 sp:pl-20 se:pl-20 sn:pl-20 sp:mt-3 se:mt-2 sn:mt-1">
-                  <h1 className="mb-1 font-bold text-white text-3xl sp:text-[20px] se:text-[20px] si:text-[22px] sr:text-[22px] sn:text-[16px] ">Our Contact Details</h1>
-                  <p className="text-white text-l sr:text-[18px] sn:text-[16px]">Let’s connect.</p>
-                </div>
-                <div className="w-full sm:w-1/3 sp:pl-20 se:pl-20 sn:pl-20 ">
-                  <div className="mb-10 mt-6">
-                  <h1 className="mb-1 font-bold text-white sr:text-[24px] sn:text-[15px]">Telephone</h1>
-                  <p className="text-white sr:text-[18px] sn:text-[12px]">+91 1111111111.</p>
-                </div>
-                <div>
-                  <h1 className="mb-1 font-bold text-white sr:text-[24px] sn:text-[15px]">WhatsApp</h1>
-                  <p className="text-white sr:text-[18px] sn:text-[12px]">+91 1111111111.</p>
-                </div>
-                </div>
-                <div className="w-full sm:w-1/3 sp:pl-20 se:pl-20 sn:pl-20">
-                <div className="mb-10 mt-6">
-                  <h1 className="mb-1 font-bold text-white sr:text-[24px] sn:text-[15px]">Office</h1>
-                  <p className="text-white sr:text-[18px] sn:text-[12px]">Gitam university</p>
-                </div>
-                <div>
-                  <h1 className="mb-1 font-bold text-white sr:text-[24px] sn:text-[15px]">Email</h1>
-                  <p className="text-white sr:text-[18px] sn:text-[12px]">vdc.gitam.edu.</p>
-                </div>
-                </div>
-              </div>
-              <div className="flex flex-row justify-between my-5">
-              <Image src={vmn}  alt="Image" className=" w-auto lg:h-[65px] h-[50px]"/>
-              <Image src={Codex}  alt="Image" className=" w-auto lg:h-[65px] h-[50px]" />
-              </div>
-           </div>
+              
+              
          </div>
       </div>
     )

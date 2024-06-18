@@ -1,21 +1,30 @@
 "use client";
-import React, { useState } from "react";
+import React, { useState,useEffect } from "react";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import Cookies from "js-cookie";
 import flag from "../../assets/flag.png";
 import cloud1 from "../../assets/cloud_1.png";
 import cloud2 from "../../assets/cloud_2.png";
 import cloud3 from "../../assets/cloud_3.png";
 import Image from "next/image";
+import axios, { AxiosError, AxiosResponse } from "axios";
+import { useRouter } from "next/navigation";
+
+
 
 const Login = () => {
+  const router = useRouter();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [showPass, setShowPass] = useState(false);
   const [error, setError] = useState("");
+  const [wrong, setWrong] = useState(false);
+  
+
 
   const notify_failure = () => {
-    toast.error("Backend Not Connected", {
+    toast.error("Unauthorized User", {
       position: "bottom-right",
       autoClose: 5000,
       hideProgressBar: false,
@@ -27,104 +36,45 @@ const Login = () => {
     });
   };
 
-  const handleLogin: React.FormEventHandler<HTMLFormElement> = (e) => {
+  const handleLogin = async (e: any) => {
     e.preventDefault();
-    console.log(email + " " + password);
-    setError("Backend Not Connected");
-    notify_failure();
-  };
-
-  const handleShowpass = () => {
+    try {
+      const response = await axios.post(
+        "http://localhost:8080/api/auth/login",
+        {
+          emailId: email,
+          password: password,
+        }
+      );
+      console.log(response)
+      Cookies.set("token", response.data?.["data"].accessToken);
+      router.push("/dashbord");
+    } catch (error) {
+      notify_failure();
+      setWrong(true);
+    }
+  }
+  const handleShowpass = () => {  
     setShowPass(!showPass);
-  };
+  }
+
+
+
+
+
+
+
+
 
   return (
     <section
-      className="w-full flex min-h-screen lg:justify-end justify-center items-center relative"
+      className="w-full flex min-h-screen  justify-center items-center relative"
       style={{
-        background: "#CCE2EA",
+        background: "#EEEEEE",
         backgroundSize: "cover",
         overflow: "hidden",
       }}>
-      <style>
-        {`
-          @keyframes cloudMove1 {
-              0% {
-                  transform: translateX(-50%);
-              }
-              100% {
-                  transform: translateX(100%);
-              }
-          }
-          @keyframes cloudMove2 {
-              0% {
-                  transform: translateX(-100%);
-              }
-              100% {
-                  transform: translateX(100%);
-              }
-          }
-          @keyframes cloudMove3 {
-              0% {
-                  transform: translateX(-100%);
-              }
-              100% {
-                  transform: translateX(100%);
-              }
-          }
-          html,
-          body {
-            overflow: hidden;
-            margin: 0;
-            padding: 0;
-          }
-            
-        `}
-      </style>
-      <Image
-        src={flag}
-        alt="flag"
-        className="absolute lg:w-[80%] bottom-0 right-0 z-10"
-      />
-      <Image
-        src={cloud1}
-        alt="cloud"
-        className="absolute cloud-animation-1"
-        style={{
-          animation: "cloudMove1 10s linear infinite",
-          width: "449px",
-          height: "218.055px",
-          left: "0",
-          top: "150px",
-          zIndex: "5",
-        }}
-      />
-      <Image
-        src={cloud2}
-        alt="cloud"
-        className="absolute cloud-animation-2"
-        style={{
-          animation: "cloudMove2 25s linear infinite",
-          width: "449px",
-          height: "218.055px",
-          left: "0",
-          top: "250px",
-        }}
-      />
-      <Image
-        src={cloud3}
-        alt="cloud"
-        className="absolute cloud-animation-3"
-        style={{
-          animation: "cloudMove3 15s linear infinite",
-          width: "449px",
-          height: "200.055px",
-          left: "0",
-          top: "450px",
-        }}
-      />
-
-      <div className="flex flex-col items-center z-30 shadow-2xl px-[40px] py-[30px] lg:mr-20  rounded-[16px] sn:px-[5px] ">
+       <div className="flex flex-col items-center z-30 shadow-2xl px-[40px] py-[30px] lg:mr-20  rounded-[16px] sn:px-[5px] ">
         <div className="text-center">
           <h1 className="text-[#000000] font-bold text-[32px] m-[15px] sp:m-[2px] sp:text-[24px] sn:text-[20px] ">
             Login
@@ -171,20 +121,24 @@ const Login = () => {
               </label>
             </div>
             <br />
+            {wrong && (
+              <div className="text-red-500 text-xl flex justify-center ">
+                <p>Wrong Credentials</p>
+                </div>
+            )}
             <div className="flex justify-center ">
               <button
                 type="submit"
-                className="bg-[#492DD8] w-full text-white font-semibold  py-[10px] rounded-[16px] transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 ...'">
+                className="bg-[#981F2B] w-full text-white font-semibold  py-[10px] rounded-[16px] transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 ...'">
                 Login
               </button>
             </div>
           </form>
           <br />
-          <div className="flex flex-row justify-between font-semibold ns:text-xs">
+          <div className="flex justify-center font-semibold ns:text-xs">
             <a className="underline hover:cursor-pointer" href="/signup">
-              Sign Up
+              Join Us
             </a>
-            <a className="underline hover:cursor-pointer">Forgot Password</a>
           </div>
         </div>
       </div>

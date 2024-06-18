@@ -35,10 +35,10 @@ const MentorCard = ({ details }: any) => {
           Experienced in mentoring startups {details.mentoring_exp}
         </p>
         <div className="flex flex-row font-semibold mt-2 gap-2 sp:gap-1">
-          <button className=" text-white bg-[#492dd8] rounded-2xl px-4 py-1 sp:text-[11px] sp:py-1 sp:px-3 sn:text-[9px] sn:py-0.5 sn:px-1 si:text-[15px] si:py-2 si:px-4 sr:text-[16px] sr:py-3 sr:px-6 se:text-[14px] se:py-2 se:px-4">
+          <button className=" text-white bg-[#981F2B] rounded-2xl px-4 py-1 sp:text-[11px] sp:py-1 sp:px-3 sn:text-[9px] sn:py-0.5 sn:px-1 si:text-[15px] si:py-2 si:px-4 sr:text-[16px] sr:py-3 sr:px-6 se:text-[14px] se:py-2 se:px-4">
             Connect
           </button>
-          <button className="text-[#492dd8] border-[#492dd8] border-[2px] rounded-2xl px-4 py-1 sp:text-[10px] sp:py-1 sp:px-3 sn:text-[9px] sn:py-0.5 sn:px-1 si:text-[15px] si:py-2 si:px-4 se:text-[14px] se:py-2 se:px-4">
+          <button className="text-[#981F2B] border-[#981F2B] border-[2px] rounded-2xl px-4 py-1 sp:text-[10px] sp:py-1 sp:px-3 sn:text-[9px] sn:py-0.5 sn:px-1 si:text-[15px] si:py-2 si:px-4 se:text-[14px] se:py-2 se:px-4">
             View More
           </button>
         </div>
